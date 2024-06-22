@@ -1,0 +1,781 @@
+{
+	"info": {
+		"_postman_id": "eae5686f-b346-434f-9802-d7612340c664",
+		"name": "Final project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34656113"
+	},
+	"item": [
+		{
+			"name": "Pelanggan",
+			"item": [
+				{
+					"name": "add pelanggan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxODk4NjA4OSwiZXhwIjoxNzE4OTkzMjg5fQ.4y1W1_81xO5txZdIKOkfU_M2SUuP7i5Yl8F5uayFXpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_pelanggan\": \"agung\",\r\n    \"nomer_hp\": \"081212162724\",\r\n    \"alamat\": \"purwakarta\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pelanggans",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "data pelanggan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTAzMzM3MiwiZXhwIjoxNzE5MDQwNTcyfQ.bgVLohiKcncnatNd6rtCs992QQYWdueKyo8azJkhx6g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pelanggans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update pelanggan",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTAzMzM3MiwiZXhwIjoxNzE5MDQwNTcyfQ.bgVLohiKcncnatNd6rtCs992QQYWdueKyo8azJkhx6g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nama_pelanggan\": \"jamal\",\r\n  \"nomer_hp\": \"092091830042\",\r\n  \"alamat\": \"karawang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pelanggans/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggans",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Pelanggan",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTAzMzM3MiwiZXhwIjoxNzE5MDQwNTcyfQ.bgVLohiKcncnatNd6rtCs992QQYWdueKyo8azJkhx6g",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pelanggans/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggans",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Durasi",
+			"item": [
+				{
+					"name": "add durasi",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NDAxMiwiZXhwIjoxNzE5MDYxMjEyfQ.WfkA9ZOuPG4azB7uDHsUrcar8ixtiLx1zvSRhHHUV_0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jenis_durasi\": \"kilat\",\r\n  \"waktu_durasi\": \"6 jam\",\r\n  \"harga_durasi\": \"10000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/durasi",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"durasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1MzI2NywiZXhwIjoxNzE5MDYwNDY3fQ.mOAeo_Qix_0uqfugXhDsyKQfT-HJiebpVMTPM90pliI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/durasi",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"durasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update durasi",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NDAxMiwiZXhwIjoxNzE5MDYxMjEyfQ.WfkA9ZOuPG4azB7uDHsUrcar8ixtiLx1zvSRhHHUV_0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jenis_durasi\": \"Reguler\",\r\n  \"waktu_durasi\": \"72 jam\",\r\n  \"harga_durasi\": 8000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/durasi/11",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"durasi",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "layanan",
+			"item": [
+				{
+					"name": "Lihat layanan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA3NDE0MywiZXhwIjoxNzE5MDgxMzQzfQ.u8JlMWpbViGqWyEF1ZXNvcG1dph9BwKK7tZFYoKXYuE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/layanans",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"layanans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tambah layanan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NDAxMiwiZXhwIjoxNzE5MDYxMjEyfQ.WfkA9ZOuPG4azB7uDHsUrcar8ixtiLx1zvSRhHHUV_0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_layanan\": \"TEST\",\r\n    \"harga_layanan\": 10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/layanans",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"layanans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update layanan",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NDAxMiwiZXhwIjoxNzE5MDYxMjEyfQ.WfkA9ZOuPG4azB7uDHsUrcar8ixtiLx1zvSRhHHUV_0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_layanan\": \"ganti test\",\r\n    \"harga_layanan\": 8000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/layanans/7",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"layanans",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pesanan satuan",
+			"item": [
+				{
+					"name": "add pesanan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTAzMzM3MiwiZXhwIjoxNzE5MDQwNTcyfQ.bgVLohiKcncnatNd6rtCs992QQYWdueKyo8azJkhx6g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_pelanggan\": \"1\",\r\n    \"id_layanan\": \"1\",\r\n    \"id_durasi\": \"1\",\r\n    \"atur_pesanan\": \"2\",\r\n    \"id_item_pesanan\": \"1\",\r\n    \"harga_pesanan\": \"20000\",\r\n    \"nota_satuan\": \"NOTAsatuan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pesanans",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pesanans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all pesanan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA2NjY5MSwiZXhwIjoxNzE5MDczODkxfQ.JjIjh17GRuJ_niAQ4kvTk8C9jqYZtloNGa1pL29p1uA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/pesanans",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"pesanans"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Item Pesanan",
+			"item": [
+				{
+					"name": "Tambah item pesanan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NDAxMiwiZXhwIjoxNzE5MDYxMjEyfQ.WfkA9ZOuPG4azB7uDHsUrcar8ixtiLx1zvSRhHHUV_0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_item\": \"celana pendek\",\r\n    \"harga_item\": 5000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/items_pesanan",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"items_pesanan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Item Pesanan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NDAxMiwiZXhwIjoxNzE5MDYxMjEyfQ.WfkA9ZOuPG4azB7uDHsUrcar8ixtiLx1zvSRhHHUV_0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/items_pesanan",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"items_pesanan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "atur_pesanan",
+			"item": [
+				{
+					"name": "add atur_pesanan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA1NjI2NSwiZXhwIjoxNzE5MDYzNDY1fQ.mOX7gc-zKmA8S04cGJBYmhYjHdEJpTr_FVlaR5SV4TQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"parfum\": \"downy\",\r\n    \"antar_jemput\": \"iya\",\r\n    \"diskon\": \"5000\",\r\n    \"catatan\": \"reer\",\r\n    \"proses_pesanan\": \"antrian\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/aturpesanan",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"aturpesanan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lihat pesanan",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA3MDU4MSwiZXhwIjoxNzE5MDc3NzgxfQ.xyWqwEy15fknSW1n3RD1OUAc3ZYbGGh7hiLLu74lb2E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/aturpesanan",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"aturpesanan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "kiloan",
+			"item": [
+				{
+					"name": "add harga",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA3NDE0MywiZXhwIjoxNzE5MDgxMzQzfQ.u8JlMWpbViGqWyEF1ZXNvcG1dph9BwKK7tZFYoKXYuE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kilo\": 5,\r\n    \"harga_kilo\": 11000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/kiloan",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"kiloan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update harga",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA3NDE0MywiZXhwIjoxNzE5MDgxMzQzfQ.u8JlMWpbViGqWyEF1ZXNvcG1dph9BwKK7tZFYoKXYuE",
+								"type": "text"
+							},
+							{
+								"key": "_method",
+								"value": "put",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"kilo\": 1,\r\n    \"harga_kilo\": 14000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/kiloan/4",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"kiloan",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pesanan_kilo",
+			"item": [
+				{
+					"name": "add pesanan kilo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA3MDU4MSwiZXhwIjoxNzE5MDc3NzgxfQ.xyWqwEy15fknSW1n3RD1OUAc3ZYbGGh7hiLLu74lb2E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_pelanggan\": \"1\",\r\n    \"id_layanan\": \"1\",\r\n    \"id_durasi\": \"1\",\r\n    \"atur_pesanan\": \"2\",\r\n    \"harga_kilo\": \"30000\",\r\n    \"nota_kiloan\": \"002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/pesanankilo",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"pesanankilo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all pesanankilo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxOTA3NDE0MywiZXhwIjoxNzE5MDgxMzQzfQ.u8JlMWpbViGqWyEF1ZXNvcG1dph9BwKK7tZFYoKXYuE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://curlywash.if22a.com/api/pesanankilo",
+							"protocol": "https",
+							"host": [
+								"curlywash",
+								"if22a",
+								"com"
+							],
+							"path": [
+								"api",
+								"pesanankilo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Agyt\",\r\n  \"no_hp\": \"08561234432112\",\r\n  \"password\": \"123456789\",\r\n  \"email\": \"agy@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://curlywash.if22a.com/api/users",
+					"protocol": "https",
+					"host": [
+						"curlywash",
+						"if22a",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\": \"admin12345678\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://curlywash.if22a.com/api/login",
+					"protocol": "https",
+					"host": [
+						"curlywash",
+						"if22a",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
